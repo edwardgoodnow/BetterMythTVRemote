@@ -1,0 +1,18 @@
+MythTV Web Remote ISSUES
+------------------------
+
+Limited IE Support
+------------------
+At present the roll overs don't work very well in IE. Also the way the icons
+are mapped as submit buttons needs modification as in IE it submits the image
+co-ordinates rather than the value
+
+Rapid Clicking can cause mythfrontend to freeze
+-----------------------------------------------
+Possible an issue with the telnet control interface. If a user clicks too
+rapidly it can cause the front end to lock up, requiring a restart of the GUI.
+
+Roll Over images required for remaining buttons
+-----------------------------------------------
+At present only the number and text buttons have rollover and click alternate
+images

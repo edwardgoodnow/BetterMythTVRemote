@@ -1,0 +1,9 @@
+{
+    "name": "egoodnow/igdb",
+    "require": {
+        "messerli90/igdb": "^1.0"
+    },
+    "require-dev": {
+        "messerli90/igdb": "^1.0"
+    }
+}

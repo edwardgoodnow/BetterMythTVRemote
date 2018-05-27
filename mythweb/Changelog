@@ -1,0 +1,64 @@
+mythtv-web-remote (0.0.9) unstable; urgency=low
+
+  * Add in README, COPYING, Issues and Changelog files
+  * First release to MythTV team
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Tue, 12 Dec 2006 09:19:13 +1300
+
+mythtv-web-remote (0.0.8) unstable; urgency=low
+
+  * Make sure we enable the Network Control port when installing on myPVR
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Mon,  4 Dec 2006 15:23:26 +1300
+
+mythtv-web-remote (0.0.7) unstable; urgency=low
+
+  * Add wide layout
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Sun,  3 Dec 2006 11:43:47 +1300
+
+mythtv-web-remote (0.0.6) unstable; urgency=low
+
+  * Load new layout into remote.php
+  * Issues with IE because of use if submit images 
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Sun,  3 Dec 2006 11:28:47 +1300
+
+mythtv-web-remote (0.0.5) unstable; urgency=low
+
+  * Add wide layout
+  * Try and make layouts HTML standards compliant
+  * Can't make CSS standards compliant due to IE hacks
+  * Correct permissions on installed files
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Sun,  3 Dec 2006 09:56:22 +1300
+
+mythtv-web-remote (0.0.4) unstable; urgency=low
+
+  * Limited button roll over support for IE
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Sun,  3 Dec 2006 09:18:51 +1300
+
+mythtv-web-remote (0.0.3) unstable; urgency=low
+
+  * Setup index.html holder
+  * Rename php remote file
+  * More tidy ups of layout file
+  * Add remote.css to install
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Mon, 27 Nov 2006 23:05:58 +1300
+
+mythtv-web-remote (0.0.2) unstable; urgency=low
+
+  * Update layout
+  * Add stylesheet remote.css
+  * Additional images for roll over graphics 
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Mon, 27 Nov 2006 22:40:33 +1300
+
+mythtv-web-remote (0.0.1) unstable; urgency=low
+
+  * Initial version of the mythtv-web-remote
+  * This is a web based virtual remote control for MythTV
+
+ -- OpenMedia Support <support@openmedia.co.nz>  Sun, 26 Nov 2006 11:57:33 +1300

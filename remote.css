@@ -1,0 +1,103 @@
+/*
+ * Style sheet (c) 2006 Steven Ellis <support@openmedia.co.nz>
+ *
+ * Published under http://creativecommons.org/licenses/by/2.5/
+ */
+
+body {
+	font-family: Arial, Helvetica;
+	font-size: 7pt;
+	margin: 0;
+	padding: 0;
+	/*background-color: #d9d9d9;*/
+	background-color: white;
+}
+
+input.txt {
+  background: none;
+  border-style: none;
+  width: 80px;
+  height: 24px;
+  text-align: center;
+  font-size: 8pt;
+  font-weight: normal;
+  background: url(./images/button_text.png) no-repeat;
+  padding: 0px;
+  margin: 0 auto;
+  behavior: url('ie_hover.htc');
+}
+
+td.txt {
+  width: 80px;
+  height: 24px;
+  border-style: none;
+  background: url(./images/button_text.png) no-repeat;
+}
+
+input.txt:hover, input.txt.hover {
+  background-image: url(./images/button_textg.png);
+}
+
+input.txt:active, input.txt.active {
+  background-image: url(./images/button_textr.png);
+}
+
+input.number {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url(./images/button_30.png) no-repeat;
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 0px;
+  behavior: url('ie_hover.htc');
+}
+
+input.number:hover {
+  background: url(./images/button_30g.png) no-repeat;
+}
+
+input.number:active {
+  background: url(./images/button_30r.png) no-repeat;
+}
+
+
+
+input.image:hover, input.image.hover { background-color: #669a7f;}
+input.image:active, input.image.active { background-color: #977958; }
+
+
+input.send-btn {
+width: 54px;
+height: 20px;
+background: #333 url(./images/btn-send.gif) no-repeat;
+outline: none;
+}
+
+input.send-btn:hover {
+background: #666 url(./images/btn-send.gif) no-repeat 0 -20px;
+}
+
+    body{
+        width:100%;
+        background-color:#ededed;
+    }
+    table {
+    width: 320px!important;
+    
+    height: 100%!important;
+}
+.txt {
+  background: #666;
+  border-radius: 6px;
+  margin: 0px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+.playlist li {
+  border: 1px solid;
+  margin-bottom: 5px;
+  margin-left: -35px!important;
+  width: 95%;
+}
