@@ -1,0 +1,299 @@
+<!DOCTYPE !html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Caredash Exam</title>
+<meta name="description" content="Caredash Demo by Edward Goodnow" />
+	 <link href="css/font-awesome.min.css" rel="stylesheet">
+	  <!-- Hope you don't mind me gtrabbing your Custom icons-->
+        <link href="https://d1gtvyuysab6gw.cloudfront.net/assets/application-630271453243f44745c36d9bc6fb63ffa4abd3eb742c56e3a15c097f501a5398.css" rel="stylesheet" type="text/css" />
+    <link href="caredash.css" rel="stylesheet">
+
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />-->
+        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css" />
+        <!--<link href="/public/css/fontastic.css" rel="stylesheet" />-->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+ 
+	    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	   
+</head>
+<body class="caredash">
+  <div id="wrapper" class="wrapper">
+    <div class="top_nav">
+    <!--Top Navigation Start -->
+       <a href="caredash.html" class="inline-block left"><img src="caredash-logo.png" /></a>
+        <nav id="top_menu" class="inline-block right">
+           <ul class="menu block">
+             <li class="inline" alt="1"><a href="caredash.html">Home</a></li>
+                  <ul class="hidden" alt="1">
+                    <li><a href="caredash.html">Link 1</a></li>
+                    <li><a href="caredash.html">Link 2</a></li>
+                    <li><a href="caredash.html">Link 3</a></li>                    
+                  </ul>  
+             <li class="inline" alt="2"><a href="caredash.html">About</a></li>
+                  <ul class="hidden" alt="2">
+                    <li><a href="caredash.html">Link 4</a></li>
+                    <li><a href="caredash.html">Link 5</a></li>
+                    <li><a href="caredash.html">Link 6</a></li>                    
+                  </ul> 
+            <li class="inline" alt="3"><a href="caredash.html">Contact</a></li>
+                  <ul class="hidden" alt="3">
+                    <li><a href="caredash.html">Link 7</a></li>
+                    <li><a href="caredash.html">Link 8</a></li>
+                    <li><a href="caredash.html">Link 9</a></li>                    
+                  </ul> 
+           </ul>
+           <!-- Some of your rules are not allowing for a collapsing pancake icon in responsive mode...would need more time to fix the rules properly-->
+          <!-- <i class="fa fa-bars"></i> -->
+        </nav>
+        
+        <!-- Top Navigation End -->    
+        
+    
+     </div>  
+     <div class="main interaction">
+     <!-- Could use bootstrap rules as well, but I have found that those rules very often can complicate a page when they are over used so I use names that are easy to remember based upon actual CSS attirbutes-->
+       <div class="inline-block seventy left">
+          <img src="top.jpg" /> <!--Would Probably be better as a PNG file, lifted this from your website-->
+       </div>
+       <div class="inline-block twenty-five right" id="form_holder">
+          <form name="signup" id="signup">
+             <h2>Sign Up With CareDash</h2>
+             <span>To Edit Your Provider Details</span>
+               <div class="row">
+                 <label for="firstname">First Name</label>
+                 <input name="firstname" id="firstname" class="form-control" value="" placeholder="John" />
+               </div>
+               <div class="row">
+                 <label for="lastname">Last Name</label>
+                  <input name="lastname" id="lastname" class="form-control" value="" placeholder="Doe" />
+               </div>
+               <div class="row">
+                 <label for="password">Password</label>
+                 <input name="password" id="password" class="form-control" value="" type="password" />
+               </div>
+               <div class="row">
+                 <label for="confirm">Confirm Password</label>
+                 <input name="confirm" id="confirm" class="form-control" value="" type="password" />
+               </div>
+               <div class="button inline-block toggle_signin" onclick="return toggle_forms('signin');" >Sign In</div>
+               <input type="submit" class="inline-block" value="Sign Up"/>
+          </form>  
+          <form name="signin" id="signin" class="hidden">
+             <h2>Sign In With CareDash</h2>
+             <span>To Edit Your Provider Details</span>
+                 <div class="row">
+                    <label for="firstname">First Name</label>
+                    <input name="email" id="email" class="form-control" value="" placeholder="you@example.com" />
+               </div>
+               <div class="row">
+                 <label for="password2">Password</label>
+                 <input name="password" id="password2" class="form-control" value="" type="password" />
+               </div>
+               <div class="button inline-block toggle_signin" onclick="return toggle_forms('signup');">Sign Up</div>
+               <input type="submit" class="inline-block" value="Sign In" />
+          </form>  
+       </div>
+       
+     </div>
+     <!--Admittedly Stole this from your existing website, but X-domain issues will restrict font useage so CORS needs to be enabled on your server or Icons need to be moved to this folder, I prefer icons over images for stuff like this myself-->
+     <div class="cta-block-wrapper">
+            <div class="cta-block-container row">
+            <h3>
+                    <a href="/find-a-doctor">
+                    Reasons To Sign Up as a Provider on CareDash
+                    </a>
+                    </h3>
+                <div class="col-lg-4 col-md-4 col-sm-12 cta-block">
+                    <div class="cta-block-cell text-center">
+                        <a class="icon-link-item" href="/find-a-doctor">
+                        <span class="icon icon-stethoscope-thin icon-xl"></span>
+                        </a>
+                    </div>
+                    <div class="cta-block-cell">
+                    
+                    <h3>
+                    <a href="/find-a-doctor">
+                    Headline 1
+                    </a>
+                    </h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 cta-block">
+                    <div class="cta-block-cell text-center">
+                    <a class="icon-link-item" href="/review-your-doctor">
+                    <span class="icon icon-review-bubbles icon-lg"></span>
+                    </a>
+                    </div>
+                    <div class="cta-block-cell">
+                    <h3>
+                    <a href="/review-your-doctor">
+                    Headline 2
+                    </a>
+                    </h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                   
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 cta-block">
+                    <div class="cta-block-cell text-center">
+                    <a class="icon-link-item" href="/portal">
+                    <span class="icon icon-dashboard-thin icon-xl"></span>
+                    </a>
+                    </div>
+                    <div class="cta-block-cell">
+                    <h3>
+                    <a href="/portal">
+                    Headline 3
+                    </a>
+                    </h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                 
+                    </div>
+                    </div>
+                </div>
+            </div>
+  </div>
+  <!--HAd to go to work, scraped your existing footer as well, I see the social buttons are changed from this code, but I would probably use FontAwesome to make these changes and then edit the below code to point to ACTUAL LINKS for the new page, so that the design stays consistent-->
+  <footer>
+  <div class="main-footer">
+            <div class="col-lg-3">
+                    <h3>
+                    About CareDash
+                    </h3>
+                    <ul class="footer-links">
+                    <li>
+                    <a id="footer_about_link" href="/about">About</a>
+                    </li>
+                    <li>
+                    <a id="footer_contact_link" href="/contact-us">Contact Us</a>
+                    </li>
+                    <li>
+                    <a id="footer_faq_link" href="/faq">Frequently Asked Questions</a>
+                    </li>
+                    <li>
+                    <a id="footer_management_team_link" href="/management-team">Management Team</a>
+                    </li>
+                    <li>
+                    <a id="footer_careers_link" href="/careers">Careers</a>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-3">
+                    <h3>
+                    For Patients
+                    </h3>
+                    <ul class="footer-links">
+                    <li>
+                    <a id="footer_review_doctor_link" href="/review-your-doctor">Review Your Provider</a>
+                    </li>
+                    <li>
+                    <a id="footer_resources_link" href="/articles">Read Articles</a>
+                    </li>
+                    <li>
+                    <a id="footer_news_link" href="/news">Health News</a>
+                    </li>
+                    <li>
+                    <a class="open-auth-modal toggle-auth" data-modal-content="signup_modal" id="footer_signup_link">
+                    Sign Up for CareDash
+                    </a>
+                    </li>
+                    <li>
+                    <a class="open-auth-modal toggle-auth" data-modal-content="login_modal" id="footer_user_login_link">
+                    Log In to CareDash
+                    </a>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-3">
+                    <h3>
+                    For Providers
+                    </h3>
+                    <ul class="footer-links">
+                    <li>
+                    <a id="footer_signup_portal_link" href="/portal">Claim Your Profile</a>
+                    </li>
+                    <li>
+                    <a class="open-auth-modal toggle-auth" data-modal-content="login_modal" id="footer_portal_login_link">
+                    Log In to Your Dashboard
+                    </a>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 pull-right-desktop-only">
+                    <h3>
+                    Connect with Us
+                    </h3>
+                    <div class="follow-icons">
+                    <ul class="share-icons-list social-icons">
+                    <li class="block no-padding">
+                    <a class="facebook follow" href="//www.facebook.com/caredash" id="facebook_follow_link" target="_blank">
+                    <span class="icon-facebook"></span>
+                    Like us on Facebook
+                    </a>
+                    </li>
+                    <li class="block no-padding">
+                    <a class="twitter follow" href="//www.twitter.com/caredash" id="twitter_follow_link" target="_blank">
+                    <span class="icon-twitter"></span>
+                    Follow us on Twitter
+                    </a>
+                    </li>
+                    <li class="block no-padding">
+                    <a class="instagram follow" href="//www.instagram.com/caredash" id="instagram_follow_link" target="_blank">
+                    <span class="icon-instagram"></span>
+                    Follow us on Instagram
+                    </a>
+                    </li>
+                    </ul>
+
+                    </div>
+                    </div>
+            </div>
+  </footer>
+</body>
+<script type="text/javascript">
+    function toggle_forms(elem){
+      $('#form_holder form').css('display', 'none');
+      $('#' + elem).css('display', 'block');
+    }
+    $(document).ready(function(){
+  
+     if($('body').width()<600){
+       
+         $('.fa-bars').bind('click', function(){
+       
+            $('.menu_block').css('display', 'block!important');
+         });
+     }else{
+       $('.fa-bars').css('display', 'none!important');
+     
+     }
+    
+    
+     $('#top_menu li.inline').bind('mouseover', function(){
+       alt=$(this).attr('alt');
+        $('ul.hidden').removeClass('active');
+        $('ul.hidden[alt="' + alt + '"]').addClass('active');
+        var position = $(this).position();
+       
+        $('ul.hidden[alt="' + alt + '"]').css('left', (position.left + -20) + 'px');  
+      });
+     $('.menu.block').bind('mouseout', function(){
+        alt=$(this).attr('alt');
+        $('ul.hidden').removeClass('active');
+     });
+    });
+</script>
+</html>

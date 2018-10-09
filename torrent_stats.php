@@ -1,5 +1,6 @@
 <?php
 require('config.php');
+$out = array(0 => '');
 if(!empty($_REQUEST['tor'])){
   $data = preg_split('/\s+/', $_REQUEST['tor']);
   if($_REQUEST['action']=='delete'){

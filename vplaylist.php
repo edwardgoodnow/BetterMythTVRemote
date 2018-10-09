@@ -37,13 +37,17 @@ $('#modal, #videoplayer').show();
  
 <ul id="playlist" class="playlist videos">
 <video width="320" height="240" controls style="display:none;" id="videoplayer">
-  <source src="http://10.0.0.186/Videos/10.Cloverfield.Lane.2016.HDRip.XViD.AC3-ETRG/10.Cloverfield.Lane.2016.HDRip.XViD.AC3-ETRG.webm" type="video/webm">
+  <source src="" type="video/webm" id="mp4video" />
 </video> 
 <?php
+$s=0;
+if(!empty($_REQUEST['page'])){
+  $s = $_REQUEST['page'] * 20;
+}
 $exts = array('avi', 'mp4', 'mkv', 'flv', 'wmv', 'webm');
 
-$query = mysqli_query($conn, "select * from videometadata");
-
+$query = mysqli_query($conn, "select * from videometadata order by title asc");// limit $s, 50");
+$total =  mysqli_num_rows(mysqli_query($conn, "select * from videometadata where filename not like '%sample%'"));
 while($row = mysqli_fetch_array($query)){
 $old_ext = pathinfo("/mnt/storage/videos/" . $row['filename'], PATHINFO_EXTENSION); 
 
@@ -56,6 +60,10 @@ $old_ext = pathinfo("/mnt/storage/videos/" . $row['filename'], PATHINFO_EXTENSIO
         mysqli_query($conn, "delete from videometadata where intid=" . $row['intid']);
         }
 }
+if($s>0){
+
+}
+
 echo mysqli_error($conn);
 ?>
 </ul>

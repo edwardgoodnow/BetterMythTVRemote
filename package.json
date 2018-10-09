@@ -1,0 +1,29 @@
+{
+  "name": "voice-commands.js",
+  "version": "1.1.0",
+  "description": "Simple wrapper for Javascript Speech-to-text to add voice commands.",
+  "main": "voice-commands.min.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimmybyrum/voice-commands.js.git"
+  },
+  "keywords": [
+    "voice",
+    "speech",
+    "text",
+    "browser"
+  ],
+  "author": "Jimmy Byrum (https://github.com/jimmybyrum)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimmybyrum/voice-commands.js/issues"
+  },
+  "homepage": "http://jimmybyrum.github.io/voice-commands.js/",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-eslint": "^0.2.0"
+  }
+}

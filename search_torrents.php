@@ -21,7 +21,7 @@ switch($_REQUEST['folder']){
   break;
   case('videos'):
     if($_REQUEST['q'] == 'new'){
-        $URL = 'https://thepiratebay.org/top/201';
+        $URL = 'https://thepiratebay.rocks/top/201';
     }else{
       $s_str = '/0/99/200';
     
@@ -30,7 +30,7 @@ switch($_REQUEST['folder']){
   
 }
 if(empty($URL)){
-    $URL = @'https://thepiratebay.org/search/' . @$_REQUEST['q'] . @$s_str;
+    $URL = @'https://thepiratebay.rocks/search/' . @$_REQUEST['q'] . @$s_str;
 }
 $ch = curl_init();
 if(!empty($_REQUEST['url'])){

@@ -4,7 +4,7 @@ $query = mysqli_query($conn, "select * from videometadata where title like '%" .
 ?>
 
  <video width="320" height="240" controls style="display:none;" id="videoplayer">
-  <source src="" type="video/webm">
+  <source src="" type="video/webm" id="mp4video" />
 </video> 
 <ul id="playlist" class="playlist videos">
 <?php

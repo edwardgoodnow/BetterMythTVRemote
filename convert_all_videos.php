@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 1);
 require('config.php');
-$query = mysqli_query($conn, "select * from videometadata order by intid desc ");
+$query = mysqli_query($conn, "select * from videometadata order by intid desc limit 1");
 $exts = array('avi', 'mp4', 'mkv', 'flv', 'wmv');
 $i=1;
 while($row = mysqli_fetch_array($query)){

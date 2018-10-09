@@ -1,0 +1,65 @@
+
+.hide-radio {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.hide-radio img, .hide-radio label {
+    display: block;
+}
+.hide-radio input[type="radio"] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+.hide-radio input[type=radio] + label {
+    border: 3px solid #F1F1F1;
+}
+
+.hide-radio input[type=radio]:checked + label {
+    border: 3px solid #F88C00;
+}
+
+ .radio-image-wrapper
+{
+    float:left !important;
+    margin-right:30px!important;
+
+}
+.hide-radio.radio-image-wrapper.qc_radio_button {
+    float: left !important;
+    margin-right: 30px!important;
+}
+
+div#widget-3_business_epic-info-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-4_business-mission-our-work-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-5_business-epic-quote-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-6_business_epic-recent-post-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-7_business-service-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-8_business-team-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-9_business-testimonials-widget-__i__ .widget-top {
+
+    background: #61b9ed;
+}
+div#widget-5_business-epic-quote-widget-__i__ .widget-top {
+    background: #61b9ed;
+}
